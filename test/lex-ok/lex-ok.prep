@@ -1,0 +1,21 @@
+}}} mod:
+::mod;
+C::"<stdlib.h>";
+$$ sum(<#> beg, <#> lim) -> <#>:
+<#> tot := beg;
+?? lim < 1:
+<- tot;
+|.:
+@@ <#> i := 0, i < lim, i++:
+tot += i;
+~@
+<- tot;
+~$
+{{{
+>>> main:
+<#^> int := C:malloc(C:sizeof(<#>));
+^int := 5;
+<#> res = sum(^int, 100);
+! "Result: {res}\n" -> ...;
+C:free(int);
+<<<

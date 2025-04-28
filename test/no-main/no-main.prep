@@ -1,0 +1,7 @@
+}}} mod1:
+<#> int := 1;
+{{{
+}}} mod2:
+::mod1;
+M::"stdlib.mini";
+{{{

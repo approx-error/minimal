@@ -1,0 +1,20 @@
+}}} mod1:
+M::"mini.mini";
+C::"stdlib.h";
+{{{
+}}} mod2:
+:: mod1;
+<#> -> <status>;
+{{{
+!~>..<~!
+}}} mmod:
+:: mod2;
+:: exmod4;
+[#] -> <vector>;
+<#> NUM := 5;
+[#] list := [3, 4, NUM];
+[":#] dict := ["hello": 0, "hi": 1, "howdy": 2];
+{{{
+>>> prog [..]:
+<- 0;
+<<<

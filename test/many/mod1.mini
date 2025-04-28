@@ -1,0 +1,4 @@
+}}} mod1:
+  C::"stdlib.h";
+  M::"stdmath.mini";
+{{{

@@ -1,0 +1,17 @@
+}}} mod1:
+C::"stdlib.h";
+M::"stdmath.mini";
+{{{
+}}} mod2:
+<#> -> <status>;
+<"> -> <msg>;
+::mod1;
+{{{
+!~>..<~!
+}}} mmod:
+::mod1;
+::mod2;
+{{{
+>>> main [..]:
++;
+<<<

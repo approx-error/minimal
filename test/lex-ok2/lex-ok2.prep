@@ -1,0 +1,46 @@
+!~>..<~!
+// sample program
+}}} head:
+::"mod";
+C::"<stdint.h>";
+M::"hello.mini";
+<#> glo := 5;
+{{{
+>>> prog[..]:
+C::"malloc";
+M::"hello";
+<#> CONST := 5;
+<#> int1 := -10;
+<#> int2 := 10;
+<#^> iptr := @int;
+<moi> a1 := 5;
+{#,%,"^} stru;
+[#^] ipls := [@int1, @int2];
+?? num1 > num2:
+! "hello" -> ...;
+|.:
+! "byee" -> ...;
+?? num1 > num2:
+! "num one" -> ...;
+|? num2 > num1:
+! "naaaa" -> ...;
+|.:
+! "samee" -> ...;
+~?
+// exponentiation is happening
+num3 := (num1 ** num2) + num1;
+@@<#>i:=0;
+i<num3;
+i++:
+! "{i}: Hello!\n" -> ...;
+~@
+$$ func(<%> flo, <"^> str) -> <>:
+?? round(flo) < flo:
+^str := "less";
+<-;
+|.:
+^str := "more";
+<-;
+~$
+<- 0;
+<<<

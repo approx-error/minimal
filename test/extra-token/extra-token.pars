@@ -1,0 +1,13 @@
+Indentation increase = child node to the one above
+Indentation same = sibling node to the one above
+
+[Source]
+  [Main File]
+    [Program Block Keyword: !~>..<~!]
+    [Main Part]
+      [Program Block Keyword: >>>]
+      [Identifier: prog]
+      [Punctuational Separator: :]
+      [Sequence]
+        [Binary Math Operator: +]
+      [Terminating Keyword: <<<]
